@@ -1,0 +1,84 @@
+header {
+    background-color: #404040;
+    width: 100%;
+    padding: 8px 1px; 
+    border-top: 5px solid #41A8FF;
+}
+
+header .logo {
+    margin-right: 180px;
+    width: 150px;
+    max-height: 50px; 
+    vertical-align: middle;  
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header li a:hover {
+    background-color: #4a6ea9;
+}
+
+/* Dropdown menu */
+.gnav__games__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gnav__dropdown__menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    overflow: hidden;
+}
+.gnav__dropdown__menu li {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.gnav__dropdown__menu li:last-child {
+    border-bottom: none;
+}
+.gnav__dropdown__menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.gnav__dropdown__menu li a:hover {
+    background-color: #00aaff;
+    color: white;
+}
+.gnav__games__dropdown:hover .gnav__dropdown__menu {
+    display: block;
+}
+
+
+
+

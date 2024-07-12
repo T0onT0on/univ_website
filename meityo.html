@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="loadHeader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="meityo.js"></script>
+        <title>meityo</title>
+        <link rel="icon" href="images/website.png">
+        <link rel="stylesheet" href="meityo.css">
+        <link rel="stylesheet" href="settings.css">
+    </head>
+    <body>
+        <header></header>
+        <div class="container">
+            <img class="gameheader" src="images/header_meityo.png">
+            <br>
+            <br>
+            <div class="sidebar">
+                <h2 class="sidebar-title">メニュー</h2>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item"><a href="#about">鳴潮とは</a></li>
+                    <li class="sidebar-menu-item"><a href="#systems">戦闘システム</a></li>
+                    <li class="sidebar-menu-item"><a href="#recommendations">どんな人にオススメ？</a></li>
+                    <li class="sidebar-menu-item"><a href="#synopsis">あらすじ</a></li>
+                    <li class="sidebar-menu-item"><a href="#other">その他</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="about" class="section">
+                    <h2 class="section-title">鳴潮とは</h2>
+                    <p>『鳴潮』はKURO GAMESが手掛ける<strong class="bold">自由度の高い戦闘</strong>と<strong class="bold">多種多彩なコンテンツ</strong>が楽しめるオープンワールドアクションRPGである。</p>
+                </div>
+                <div id="systems" class="section">
+                    <h2 class="section-title">戦闘システム</h2>
+                    <ul>
+                        <li>通常攻撃
+                            <ul>鳴潮の最も基本となる攻撃手段で、ボタンを連続で押すことで連続攻撃になる。<strong class="bold">キャラクターによってモーションや特徴が異なる</strong>ので、よく使うキャラクターの特徴を押さえておくとよい。<br>またジャンプ中に攻撃を行うことで、ジャンプ攻撃になる。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>重撃
+                            <ul>通常攻撃を長押しすることで重撃が使える。重撃の特徴や性能はキャラクターによって大きく異なる。<br>拳銃キャラクターは重撃を行うと照準モードに入り、ボタンを離すことで攻撃を行う。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>共鳴スキル
+                            <ul>共鳴スキルはキャラクターごとに持っているスキルで、クールダウンが設定されている。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>共鳴回路
+                            <ul>HPバーの上に表示されているゲージをためることでキャラクターごとに決められている特殊な効果を発動できる。<br>攻撃を強化するものや特殊なスキルが使えるようになるものなど様々な種類の効果が存在する。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>共鳴開放
+                            <ul>共鳴開放は共鳴エネルギーがたまったときに使える必殺技。発動するにはエネルギーを必要量ためる人用があり、その分効果も狭量なものになっている。<br>共鳴エネルギーは通常攻撃や重撃、戦闘スキルなどを敵に当てることで少しずつ溜まっていく。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>終奏スキル / 変奏スキル
+                            <ul>協奏エネルギーがたまっている状態でキャラクターを変更すると発動することができ、変更前のキャラクターが終奏スキルを、変更後のキャラクターが変奏スキルを発動する。<br>これらのスキルは単に攻撃を行うだけでなくパーティーを回復したり、強化するものもあり鳴潮の戦闘において重要な役割を果たす。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>回避 / ジャスト回避
+                            <ul>鳴潮では回避ボタンを押すことでスタミナを消費し敵の攻撃をよけることができる。回避の無敵時間中に敵の攻撃を受けるとジャスト回避になる。<br>ジャスト回避が成功すると、協奏エネルギーを溜めることができ、また回避直後に攻撃を行うことで回避反撃という特殊な攻撃も行うことができる。この攻撃でもエネルギーをためることができるので、積極的に狙っていきたい。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>パリィ
+                            <ul>パリィとは特定の攻撃の前に表示される黄色い円が重なる瞬間に攻撃を当てることで発動できる。<strong class="bold">成功すると敵が一定時間行動不能になる。</strong><br>タイミングがシビアな分リターンも大きいので可能な限り狙っていきたい。</ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>音骸スキル
+                            <ul>ボタンを押すことでキャラクターが装備している音骸ごとに定められたスキルを発動することができる。このスキルには攻撃を行うもの、キャラクターを強化するものなど様々な効果がある。</ul>
+                    </ul>
+                </div>
+                <div id="recommendations" class="section">
+                    <h2 class="section-title">どんな人にオススメ？</h2>
+                    <p>多彩なスキルを使って敵と戦闘したり、回避やパリィを用いて強敵との戦闘を楽しみたい人<br>広大なワールドを自由に走り回り探検や攻略をしたい人<br>などにおすすめ。<br>通常プレイは無料(内部課金あり)なので気になった人にはぜひやってみてほしい。</p>
+                </div>
+                <div id="synopsis" class="section">
+                    <h2 class="section-title">あらすじ</h2>
+                    <p>主人公である漂泊者が謎の惑星「ソラリス」で目を覚ますところから始まる。漂泊者は記憶を失っており、自分が何者なのか分からない状態で、ソラリスで発生する事件の解決や自分の記憶を取り戻すことを目指して奔走する。</p>
+                </div>
+                <div id="other" class="section">
+                    <h2 class="section-title">その他</h2>
+                    <p>ver1.2は8/16頃に実装予定<br>限定共鳴者:今汐は7/22まで、長離は7/22~8/14までピックアップ</p>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <footer>
+            <p>© KURO GAMES. All rights reserved. <br>「鳴潮」の名称、画像、キャラクター、ロゴ、および関連する素材は、KURO GAMESの著作物です。<br>これらの素材は、KURO GAMESの許可を得て使用されています。</p>
+        </footer>
+    </body>
+</html>

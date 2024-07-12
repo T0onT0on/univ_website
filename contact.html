@@ -1,0 +1,49 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <script src="loadHeader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="contact.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/website.png">
+        <link rel="stylesheet" href="settings.css">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <header></header>
+        <div class="Contact-AllContent">
+            <h1 class="Contact-Title">お問い合わせ窓口</h1>
+            <p>
+                土日祝日等の開発チーム休業日にいただいたお問い合わせにつきましては<br>
+                翌営業日以降の返信となりますので、予めご了承ください。<br>
+                「必須」マークの付いている項目は入力が必須となります。お手数ですが<br>
+                ご記入いただきますようお願いいたします。
+                <div id="faq">ご記入の前に、<a href="faq.html">FAQ</a>のよくあるご質問をお読みください。</div>
+            </p>
+            <form>
+                <label for="name">お名前</label>
+                <label class="any" for="name">任意</label>
+                <br>
+                <input id="name" class="inputs" type="text" placeholder="田中  太郎" data-formrun-required="true" style="font-size: 16px;">
+                <br>
+                <br>
+                <label for="mail">メールアドレス</label>
+                <label class="required" for="mail">必須</label>
+                <br>
+                <input id="mail" class="inputs" type="email" required="required" placeholder="example@mail.com" style="font-size: 16px;">
+                <br>
+                <br>
+                <label for="text">お問い合わせ内容</label>
+                <label class="required" for="text">必須</label>
+                <br>
+                <textarea id="text" class="inputs" required="required" placeholder="お問い合わせ内容を入力してください" rows="4" style="overflow: scroll; font-size: 16px; height: 169px;"></textarea>
+                <br>
+                <br>
+                <button id="SubmitButton" type="submit" data-formrun-submitting-text="送信中...">送信</button>
+                <br>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

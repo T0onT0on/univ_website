@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        
+        <title>top page</title>
+        <link rel="icon" href="images/website.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="settings.css">       
+        <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/css/6-1-8.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/s">
+    </head>
+    <body>
+        <div id="background">
+            <video id="backgroundVideo" autoplay muted loop class="background-video">
+                <source src="images/pikmin4.mp4" type="video/mp4">
+            </video>
+            <img id="backgroundImage" src="images/pikmin4.png" alt="Background" class="background-image" style="display: none;">
+        </div>
+        <div class="container">
+            <div class="hero">
+                <img class="resizeheader" src="images/header_index.png"> <!--header画像-->
+            </div>
+            <header class="site-header">
+                <nav class="gnav">
+                    <ul class="gnav__menu">
+                        <li class="gnav__menu__item"><a href="./index.html">Home</a></li>
+                        <li class="gnav__menu__item gnav__games__dropdown"><a href="#games" class="gnav__menu__link">Games</a></li>
+                        <li class="gnav__menu__item"><a href="#news">News</a></li>
+                        <li class="gnav__menu__item"><a href="calender.html">Calendar</a></li>
+                        <li class="gnav__menu__item"><a href="faq.html">FAQ</a></li>
+                        <li class="gnav__menu__item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <br>
+            <br>
+            <div class="content">
+                <hr>
+                <div id="news">
+                    <h2 class="section">最新ニュース</h2>   
+                    <ul class="slide">
+                        <li>
+                            <a href="https://youtu.be/Ms4OaRiK_Ik?si=GWc33wOBmLj-y_rO">
+                            <img src="images/Slide_Genshin.png" alt="Genshini1">
+                            <div class="overlay">『原神』 シグウィン、<br>クロリンデが参戦！</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraft.net/ja-jp/article/minecraft-java-edition-1-21">
+                            <img src="images/Slide_Minecraft.png" alt="Minecraft1">
+                            <div class="overlay">『Minecraft』 Ver 1.21へ<br>アップデート！</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wutheringwaves.kurogames.com/jp/main/news/detail/987">
+                            <img src="images/Slide_meityo1.png" alt="Meityo1">
+                            <div class="overlay">『鳴潮』Ver1.1<br>「春雷明かす乗霄の暗雲」</div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="https://www.monster-strike.com/news/20240627_1.html">
+                            <img src="images/Slide_Monsuto2.png" alt="MonsterStrike1">
+                            <div class="overlay">『モンスターストライク』<br>ファンタオラゴン降臨！</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=PLwJHG1Kt1g&pp=ygUO5Y6f56WeIHZlciA0Ljc%3D">
+                            <img src="images/Slide_Genshin2.png" alt="Genshin2">
+                            <div class="overlay">『原神』 新魔人任務<br>「ベッドタイムストーリー」</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.minecraft.net/ja-jp/article/minecraft-turning-15-jp">
+                            <img src="images/Slide_Minecraft2.png" alt="Minecraft2">
+                            <div class="overlay">『Minecraft』マイクラは<br>今年で15周年！</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wutheringwaves.kurogames.com/jp/main/news/detail/1028">
+                            <img src="images/Slide_meityo2.png" alt="Meityo2">
+                            <div class="overlay">『鳴潮』深層空想秘境<br>「夢燃ゆる黒焔」が開催！</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.monster-strike.com/news/20240704_7.html">
+                            <img src="images/Slide_Monsuto1.png" alt="Monsterstrke2">
+                            <div class="overlay">『モンスターストライク』<br>モンテ・クリストが登場！</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                </div>
+                <hr>
+                <div id="games">
+                    <h2 class="section"><b>紹介ゲーム一覧</b></h2>
+                    <ul class="gamelist">
+                        <li>
+                            <a href="./meityo.html">
+                                <img class="icons" src="icons/meityo.png">
+                                <p class="gametitles">鳴潮</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./genshin.html">
+                                <img class="icons" src="icons/genshin.png">
+                                <p class="gametitles">原神</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./minecraft.html">
+                                <img class="icons" src="icons/minecraft.png">
+                                <p class="gametitles">Minecraft</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./monsterstrike.html">
+                                <img class="icons" src="icons/monsterstrike.png">
+                                <p class="gametitles">モンスト</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="humanfallflat.html">
+                                <img class="icons" src="icons/humanfallflat.png">
+                                <p class="gametitles">HFF</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/nyanko.png">
+                                <p class="gametitles">にゃんこ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/pazudora.png">
+                                <p class="gametitles">パズドラ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/tumutumu.png">
+                                <p class="gametitles">ツムツム</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="gamelist">
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/puroseka.png">
+                                <p class="gametitles">プロセカ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/puyokue.png">
+                                <p class="gametitles">ぷよクエ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/punipuni.png">
+                                <p class="gametitles">ぷにぷに</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/uma.png">
+                                <p class="gametitles">ウマ娘</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/hebuban.png">
+                                <p class="gametitles">ヘブバン</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/doraegu.png">
+                                <p class="gametitles">ドラエグ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/asuta-tatakurisu.png">
+                                <p class="gametitles">アスタタ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="maintenance.html">
+                                <img class="icons" src="icons/resureri.png">
+                                <p class="gametitles">レスレリ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+                <br>
+                <br>
+                <hr>
+                <h2 class="section"><b>コミュニティ紹介</b></h2>
+                <div class="community">
+                    <div class="explanation">
+                        <p>
+                            8期生のメンバーが集まり、ゲームを楽しんでいるコミュニティです。<br>
+                            頻繁に通話も行われており、雑談目的でも気軽に参加できます。<br><br>
+                            現在は以下のゲームが人気です。<br><br>
+                            <img src="images/valorant.jpg" class="PopularGame-icon">
+                            <img src="icons/genshin.png" class="PopularGame-icon">
+                            <img src="images/fortnight.png" class="PopularGame-icon">
+                        </p>
+                    </div>
+                    <div class="discord">
+                        <div class="discord-container">
+                            <div class="discord-header">
+                                <img src="images/discord_logo.png"> 
+                                <h2>INIAD8thゲーム鯖</h2>
+                            </div>
+                            <div class="discord-content">
+                                <div class="discord-texts">
+                                    <div class="discord-info">
+                                        <h3>サーバー情報</h3>
+                                        <ul>
+                                            <li>メンバー数： 68</li>
+                                            <li>ボット数： 4</li>
+                                        </ul>
+                                    </div>
+                                    <br>
+                                    <div class="discord-channels">
+                                        <h3>人気のチャンネル</h3>
+                                        <ul>
+                                            <li>&#x1f4ac;｜雑談 </li>
+                                            <li>&#x26cf; ｜マイクラ</li>
+                                            <li>&#x1f52b;｜スプラ</li>
+                                            <li>&#x1f506;｜overwatch</li>
+                                            <li>&#x1f310;｜vrchat </li>                   
+                                        </ul>
+                                    </div>
+                                    <img src="images/discord-icon.png">
+                                </div>
+                                <button onclick="location.href='https://discord.gg/8m8KDKNZfV'">今すぐ参加する</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+                <hr>
+                <div id="comments">
+                    <h2 class="section"><b>コメントを投稿する</b></h2>
+                    <div class="form-container">
+                        <form id="comment-form" action="/submit-comment" method="POST">
+                            <div class="form-group">
+                                <label for="name">
+                                    <img src="images/human.png" alt="Human Icon" class="icon"> ニックネーム
+                                </label>
+                                <input id="name" name="name" type="text" placeholder="名無しさん" class="inputs">
+                            </div>
+                            <br>
+                            <div class="textarea-container">
+                                <textarea id="text" name="comment" placeholder="コメントを入力してください" required rows="4" class="inputs"></textarea>
+                                <button type="submit" id="submit-button" disabled>投稿する</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="comments-section" class="comments-section">
+                        <!-- コメントがここに追加される -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <footer>
+            <ul class="copyright-list">
+                <li>原神（© <a href="https://www.mihoyo.com/">miHoYo</a> ）</li>
+                <li>鳴潮（© <a href="https://kurogames.com/">KURO GAMES</a> ）</li>
+                <li>モンスターストライク（© <a href="https://mixi.co.jp/">MIXI</a> ）</li>
+                <li>Minecraft（© <a href="https://www.minecraft.net/ja-jp">Mojang Studios</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>Human Fall Flat（© <a href="https://nobrakesgames.com/">No Brakes Games</a> ）</li>
+                <li>にゃんこ大戦争（© <a href="https://www.ponos.jp/">PONOS Corp</a> ）</li>
+                <li>パズル&ドラゴンズ（© <a href="https://www.gungho.co.jp/">GungHo Online Entertainment</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>LINE: ディズニー ツムツム（© <a href="https://www.disney.co.jp/">Disney</a>, © <a href="https://www.pixar.com/">Disney/Pixar</a>, © <a href="https://line.me/ja/">LINE Corporation</a> ）</li>
+                <li>ぷよぷよクエスト（© <a href="https://www.sega.jp/">SEGA</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>プロジェクトセカイ カラフルステージ！ feat. 初音ミク（© <a href="https://www.sega.jp/">SEGA</a>, © <a href="https://colorfulpalette.jp/">Colorful Palette Inc.</a>, © <a href="https://www.crypton.co.jp/">Crypton Future Media</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>妖怪ウォッチ ぷにぷに（© <a href="https://www.level5.co.jp/index.php">LEVEL-5 Inc.</a>, © <a href="https://www.nhn-playart.com/">NHN PlayArt Corp.</a> ）</li>
+                <li>ウマ娘 プリティーダービー（© <a href="https://www.cygames.co.jp/">Cygames</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>ヘブンバーンズレッド（© <a href="https://www.wfs.games/">WFS Developed by WRIGHT FLYER STUDIOS</a>, © <a href="https://visual-arts.jp/">VISUAL ARTS</a> ）</li>
+                <li>ドラゴンエッグ（© <a href="https://rudel.jp/">Rudel</a> ）</li>
+            </ul>
+            <ul class="copyright-list">    
+                <li>アスタータタリクス（© <a href="https://gu3.co.jp/">gumi Inc.</a> ）</li>
+                <li>レスレリアーナ（© <a href="https://www.gamecity.ne.jp/index.html">コーエーテクモゲームス</a>, © <a href="https://games.aktsk.jp/">Akatsuki Games Inc.</a> ）</li>
+                <li>ピクミン4（© <a href="https://www.nintendo.com/jp/index.html">Nintendo</a> ）</li>
+            </ul>
+            <br>
+            <p>
+                これらの画像およびコンテンツは各著作権者の所有物です。<br>当サイトは、教育的目的および非営利目的でこれらの画像を引用しています。
+            </p>
+        </footer>
+    </body>
+</html>
+
+
+

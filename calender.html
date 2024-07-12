@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="loadHeader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="calender.js"></script>
+        <meta charset="UTF-8">
+        <title>Minecraft</title>
+        <link rel="icon" href="images/website.png">
+        <link rel="stylesheet" href="calender.css">
+        <link rel="stylesheet" href="settings.css">
+    </head>
+    <body>
+        <header></header>
+        <div class="container">
+            <div class="header">
+                <div class="color-info">
+                    <ul>
+                        <li><strong id="color-genshin">●</strong> 原神</li>
+                        <li><strong id="color-meityo">●</strong> 鳴潮</li>
+                        <li><strong id="color-monsuto">●</strong> モンスターストライク</li>
+                    </ul>
+                </div>
+                <p id="year-month">2024年7月</p>   
+                <div id="buttons">
+                    <button id="prev" class="button">&lt;</button>
+                    <button id="next" class="button">&gt;</button>             
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>日</th>
+                        <th>月</th>
+                        <th>火</th>
+                        <th>水</th>
+                        <th>木</th>
+                        <th>金</th>
+                        <th>土</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                </tbody>
+            </table>
+
+        </div>
+    </body>
+</html>
+

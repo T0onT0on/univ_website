@@ -1,0 +1,109 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.color-info {
+    order: 3;
+    text-align: right;
+}
+
+.color-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.color-info li {
+    display: inline-block;
+}
+
+#color-genshin {
+    color: #3498DB;
+}
+
+#color-meityo {
+    color: #2ECC71;
+}
+
+#color-monsuto {
+    color: #E74C3C;
+}
+#year-month {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    width: 14.28%;
+    height: 80px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    position: relative;
+}
+th {
+    background-color: #F7F7F7;
+}
+#prev, #next {
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#buttons {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.event {
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0px 0 0;
+    border-radius: 3px;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    z-index: 1;
+    top: 60px;
+}
+.event-continued::before {
+    content: "";
+    background-color: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+.event-purple {
+    background-color: #A86CC1;
+}
+.event-red {
+    background-color: #E74C3C;
+}
+.event-blue {
+    background-color: #3498DB;
+}
+.event-orange {
+    background-color: #E67E22;
+}
+.event-green {
+    background-color: #2ECC71;
+}

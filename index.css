@@ -1,0 +1,526 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.site-header{
+    top: 0;
+    text-align: center;
+    background: gray;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000px;
+}
+
+.gnav {
+    display: flex;
+    justify-content: center;
+}
+.gnav__menu{
+    max-width: 1200px;
+    flex-grow: 1;
+    justify-content: space-around;
+    display: flex;
+    padding: 0;
+    background-color: gray;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    justify-content: space-around;
+}
+.gnav__menu__item{
+    list-style: none;
+    padding: 0 40px;
+    border-right:solid #dedede;
+    display: flex;
+}
+.gnav__menu__item:first-child {
+    border-left: solid #dedede;
+}
+.gnav__menu__item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 0;
+    width: 100%; 
+    height: 100%; 
+}
+.gnav__menu__item:hover {
+    background-color: #555555;
+}
+
+.hero{
+    max-height: 500px;
+    overflow: hidden;
+    text-align:center;
+}
+
+.resizeheader{
+    width: auto;
+    height: auto;  
+}
+
+.gamelist{
+    padding-left: 0;
+    list-style: none;
+    display: flex;    
+}
+.gametitles{
+    width: fit-content;
+    white-space: nowrap;
+    margin: auto;
+    color: black;
+}
+
+.gnav__games__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gnav__dropdown__menu {
+    z-index: calc(infinity);
+    border: 3px solid lightgray; 
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;   
+    list-style: none;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+    min-width: 190px; 
+}
+.gnav__dropdown__menu li {
+    border-bottom: 1px solid #ccc;
+}
+.gnav__dropdown__menu li:last-child {
+    border-bottom: none;
+}
+.gnav__dropdown__menu li a {
+    color: black; 
+}
+.gnav__dropdown__menu li a:hover {
+    background-color: lightgray;
+}
+.gnav__games__dropdown:hover .gnav__dropdown__menu {
+    display: block;
+}
+
+
+.slide {
+    opacity: 0;
+    transition: opacity 1.5s ease; 
+}
+.slide.fade-in {
+    opacity: 1;
+}
+.slide img {
+    width:100%;
+    height:auto;
+    border-right: white;
+    border-left: white;
+}
+
+.nav-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(200, 200, 200, 0.3);
+    border: none;
+    color: white;
+    width: 24px;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slick-dots {
+    bottom: 20px; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb; 
+    border: none;
+    margin: 0 5px;
+}
+.slick-dots li.slick-active button {
+    background-color: lightskyblue; 
+}
+
+.slide li {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.slide li:hover .overlay {
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.25);
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: #23254c;
+}
+
+.section::before {
+    content: "";
+    width: 100px; 
+    height: 2px;
+    background-color: #23254c;
+    margin-right: 30px;
+}
+.section::after {
+    content: "";
+    width: 100px; 
+    height: 2px;
+    background-color: #23254c; 
+    margin-left: 30px; 
+}
+
+#comments form{
+    border: 2px solid lightgray;
+    border-radius: 8px; 
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.form-group .icon {
+    margin-right: 10px;
+    width: 40px; 
+    height: auto;
+}
+#form-name {
+    margin-left: 30px;
+    width: 300px;
+    height: auto;
+}
+.inputs {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea.inputs {
+    height: 200px; 
+    resize: vertical;
+}
+
+form button {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(48, 193, 241);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+form button:hover:enabled {
+    background-color: rgb(38, 153, 200);
+    transition: 0.2s ease;
+}
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-inner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment .icon {
+    margin-right: 15px;
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content .name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comment-content .timestamp {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px; 
+}
+
+.comment-content .comment-text {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.gamelist {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin-left: 5px;
+}
+
+.gamelist li {
+    padding: 5px;
+    text-align: center;
+}
+
+.gamelist li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .3s ease;
+
+}
+.gamelist li a {
+    color: 	#3b55e9;
+    text-decoration: none;
+}
+
+.gamelist li:hover img {
+    transform: scale(1.1);
+}
+
+.community {
+    display: flex;
+    align-items: stretch;
+}
+.explanation, .discord {
+    display: flex;
+    flex-direction: column;
+    height: inherit; 
+    justify-content: space-between;
+}
+
+.discord {
+    height: inherit; 
+    width: 60%;
+    float: right;
+    border-radius: 0 15px 15px 0;
+    box-sizing: border-box;
+    padding: 20px;
+   
+}
+
+.explanation {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.explanation p {
+    font-size: 125%;
+}
+
+.PopularGame-icon {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+
+.discord-container {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.discord-header img {
+    padding-left: 20px;
+    width: 170px;
+    height: auto;
+}
+
+.discord-header {
+    background: #5865F2;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.discord-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+.discord-content {
+    height: 100%;
+    padding-top: 20px;
+    background: #2C2F33;
+    color: white;
+}
+
+.discord-content ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.discord-texts {
+    position: relative;
+}
+
+.discord-texts h3 {
+    font-size: 150%
+}
+
+.discord-texts > div {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.discord-info {
+    padding-left: 10px;
+}
+
+.discord-channels {
+    padding-left: 10px;
+}
+
+.discord-texts img {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    size: 100%;
+    border-radius: 50%;
+    border: 2px solid #5865F2;
+}
+
+.discord-content button {
+    color: white;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #7289DA;
+    transition: opacity .25s ease-out;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.discord-content button:hover {
+    background-color: #41454B;
+}
+
+.background-video {   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+ul.copyright-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul.copyright-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+

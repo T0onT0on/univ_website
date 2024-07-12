@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="loadHeader.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script src="genshin.js"></script>
+        <meta charset="UTF-8">
+        <title>GenshinImpact</title>
+        <link rel="icon" href="images/website.png">
+        <link rel="stylesheet" href="genshin.css">
+        <link rel="stylesheet" href="settings.css">
+    </head>
+    <body>
+        <header></header>
+        <div class="container">
+            <img class="gameheader" src="images/header_genshin.png">
+            <br>
+            <br>
+            <div class="sidebar">
+                <h2 class="sidebar-title">メニュー</h2>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item"><a href="#about">原神とは </a></li>
+                    <li class="sidebar-menu-item"><a href="#characteristics">主な特徴 </a></li>
+                    <li class="sidebar-menu-item"><a href="#synopsis">あらすじ </a></li>
+                    <li class="sidebar-menu-item"><a href="#recommendations">どんな人にオススメ？ </a></li>
+                    <li class="sidebar-menu-item"><a href="#others">その他</a></li>
+                </ul>
+                <br><br>
+                <h2 class="sidebar-title">公式動画</h2>
+                <h4>メインストーリーチャプターPV<br>「足跡」</h4>
+                <iframe src="https://www.youtube.com/embed/jtpX8a8G3q0?si=1-udKi4GA3MqBKNr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h4>Ver.2.0公式PV<br>「鳴神不動、泡影を滅す」</h4>
+                <iframe src="https://www.youtube.com/embed/H8NhrjsRBO4?si=OyTkpWRDKGQtyeE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h4>Ver.3.0公式PV<br>「黎明を告げる千の薔薇</h4>                
+                <iframe src="https://www.youtube.com/embed/k8OM_bs_Y6o?si=XEHlPXh6npKQpeiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h4>Ver.4.0公式PV<br>「ゆえなく煙る霧雨のように」</h4>
+                <iframe src="https://www.youtube.com/embed/OlxaEK9K1Cs?si=mcPsjOth0DHN32Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br>
+                <h2 class="sidebar-title">ギャラリー</h2>
+                <img class="gallery" src="images/genshin_gallery1.jpg">
+                <img class="gallery" src="images/genshin_gallery2.jpg">
+                <img class="gallery" src="images/genshin_gallery3.jpg">
+                <img class="gallery" src="images/genshin_gallery4.jpg">
+
+
+            </div>
+            <div class="content">
+                <div id="about" class="section">
+                    <h2 class="section-title">原神とは</h2>
+                    <p>原神（Genshin Impact）は、miHoYoが開発したアドベンチャーRPGです。プレイヤーである旅人は「ティワット」という広大な幻想世界を冒険し、個性ある仲間たちとともに立ちはだかる強敵と戦っていくゲームです。</p>
+                </div>
+                <div id="characteristics" class="section">
+                    <h2 class="section-title">主な特徴</h2>
+                    <ul>
+                        <li><b>オープンワールド</b><br>崖を登ったり、海を泳いだり、空を飛んだりと進め方は人それぞれ。</li>
+                        <br>
+                        <li><b>元素システム</b><br>この世界には「風」「岩」「雷」「草」「水」「炎」「氷」の七つの元素が存在する。複数の元素を用いることで蒸発や超電導などの連鎖反応を起こすことができる。</li>
+                    <br>
+                </div>
+                <div id="synopsis" class="section">
+                    <h2 class="section-title">あらすじ</h2>
+                    <p>双子の兄妹、蛍と空はこれまでに多くの世界を渡り歩いてきた。 しかし、原神の舞台となる「テイワット」にて謎の神との戦いに敗れ、<strong class="bold">双子の片割れを連れ去られてしまう</strong>。 やがて目が覚めた主人公は、行方不明となった兄妹を探すため、テイワットに存在する7つの国をめぐる旅に出発する。</p>
+                </div>
+                <div id="countries" class="section">
+                    <h2 class="section-title">テイワットを統治する７つの国</h2>
+                    <ul>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">モンド　|　自由の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 風<br>統治している神： バルバトス</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_mondstadt.png" alt="Mondstadt">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">璃月　|　契約の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 岩<br>統治している神： モラクス</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_liyue.png" alt="Liyue">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">稲妻　|　永遠の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 雷<br>統治している神： バアルゼブル</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_inazuma.png" alt="Inazuma">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">スメール　|　知恵の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 草<br>統治している神： クラクサナリデビ</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_sumeru.png" alt="Sumeru">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">フォンテーヌ　|　正義の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 水<br>統治している神： フォカロルス</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_fontaine.png" alt="Fontaine">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">ナタ　|　戦争の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 炎<br>統治している神： 不明</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_natlan.png" alt="Natlan">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="country-item">
+                            <div class="country-container">
+                                <div class="country-title-container">
+                                    <h3 class="country-title">スネージナヤ　|　反逆の国</h3>
+                                    <div class="country-content">
+                                        <p>元素： 氷<br>統治している神： 不明</p>
+                                    </div>
+                                </div>
+                                <div class="country-image-container">
+                                    <img class="country-image" src="images/genshin_snezhnaya.png" alt="Snezhnaya">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="recommendations" class="section">
+                    <h2 class="section-title">どんな人にオススメ？</h2>
+                    <p>原神は以下のような人におすすめです：
+                        <ul>
+                            <li>美しいグラフィックや景観を楽しみたい人</li>
+                            <li>自分のスタイルで探索するのが好きな人</li>
+                            <li>多種多様なキャラクターを育成するのが好きな人</li>
+                            <li>友達やほかのプレイヤーと協力してプレイしたい人</li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="others" class="section">
+                    <h2 class="section-title">その他</h2>
+                    <p>ストーリーは今もなお制作が続いており、<strong class="bold">今年の夏には炎の国「ナタ」が実装予定</strong>。
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>原神 © 2020-2024 miHoYo Co., Ltd. All rights reserved.<br>原神および関連するすべてのタイトル、ロゴ、キャラクターはmiHoYo Co., Ltd.の商標です。</p>
+        </footer>
+    </body>
+</html>
+
